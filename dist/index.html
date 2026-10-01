@@ -41,19 +41,63 @@
                 <section class="grid gap-6 lg:grid-cols-2 md:grid-cols-2">
                     <div>
                         <label for="nome" class="block ml-2 text-sm mb-2 text-slate-300 ">Nome Completo</label>
-                        <input type="text" id="nome" placeholder="Digite seu nome" minlength="10" maxlength="30" required 
-                        class="border border-white/10 bg-slate-950/60 px-2 py-3 outline-none focus:bg-white/10 focus:border-cyan-400 w-full rounded-lg">
+                        <input type="text" id="nome" placeholder="Digite seu nome" minlength="10" maxlength="30"
+                            required
+                            class="border border-white/10 bg-slate-950/60 px-2 py-3 outline-none focus:bg-white/10 focus:border-cyan-400 w-full rounded-lg">
                     </div>
                     <div>
                         <label for="codigo" class="block ml-2 text-sm mb-2 text-slate-300 ">Código de acesso</label>
-                        <input type="text" id="codigo" placeholder="Digite seu Ccódigo" minlength="10" maxlength="30" required
+                        <input type="text" id="codigo" placeholder="Digite seu Ccódigo" minlength="10" maxlength="30"
+                            required
                             class="border border-white/10 bg-slate-950/60 px-2 py-3 outline-none focus:bg-white/10 focus:border-cyan-400 w-full rounded-lg">
+                    </div>
+                    <div>
+                        <label for="dataviagem" class="block ml-2 text-sm mb-2 text-slate-300 ">Data da viagem</label>
+                        <input type="date" id="dataViagem"
+                            class="border border-white/10 bg-slate-950/60 px-2 py-3 outline-none focus:bg-white/10 focus:border-cyan-400 w-full rounded-lg">
+                    </div>
+                    <div>
+                        <label for="email" class="block ml-2 text-sm mb-2 text-slate-300 ">Email</label>
+                        <input type="email" id="email" placeholder="Digite o seu email" class="border border-white/10 bg-slate-950/60 px-2 py-3 outline-none
+                         focus:bg-white/10 focus:border-cyan-400 w-full rounded-lg">
                     </div>
                 </section>
             </fieldset>
 
-            <button type="submit"> Reservar viagem</button>
-            <button type="reset"> Limpar dados</button>
+
+
+            <fieldset class="border border-white/10 rounded-2xl bg-white/10 p-4">
+                <legend class="text-cyan-300 px-2 font-title text-lg font-bold">02. Detalhes da viagem</legend>
+                <section class="grid gap-6 lg:grid-cols-2 md:grid-cols-2">
+                    <div>
+                        <label for="destino" class="block ml-2 text-sm mb-2 text-slate-300 ">Destino</label>
+                        <select name="destino" id="destino" required
+                            class="border border-white/10 bg-slate-950 px-2 py-3 outline-none focus:border-cyan-400 w-full rounded-lg">
+                            <option value="" disabled selected>Selecione um destino</option>
+                            <option value="Lua">Lua</option>
+                            <option value="Marte">Marte</option>
+                            <option value="Titan">Titan</option>
+                            <option value="Europa">Europa</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="nave" class="block-2 text-sm mb-2 text-slate-300">Nave preferida</label>
+                        <input type="text" id="nave" list="listNaves" name="nave" class="border border-white/10 bg-slate-950/60 px-2 py-3 outline-none
+                         focus:bg-white/10 focus:border-cyan-400 w-full rounded-lg"
+                            placeholder="Escolha ou digite uma nave">
+
+                        <datalist id="listNaves">
+                            <option value="Orion Gx"></option>
+                            <option value="Galaxy Explorer"></option>
+                            <option value="Star Voyager"></option>
+                            <option value="Cosmos 3000"></option>
+                            <option value="Zenith 8000"></option>
+                            <option value="Open Space"></option>
+                        </datalist>
+                    </div>
+                </section>
+            </fieldset>
+
         </form>
     </main>
 </body>
