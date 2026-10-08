@@ -35,7 +35,6 @@
             <p class="my-5 font-medium text-cyan-300 text-center text-balance">
                 Preencha os dados abaixo para confirmar sua viagem especial
             </p>
-
             <fieldset class="border border-white/10 rounded-2xl bg-white/10 p-4">
                 <legend class="text-cyan-300 px-2 font-title text-lg font-bold">01. Dados do viajante</legend>
                 <section class="grid gap-6 lg:grid-cols-2 md:grid-cols-2">
@@ -63,9 +62,6 @@
                     </div>
                 </section>
             </fieldset>
-
-
-
             <fieldset class="border border-white/10 rounded-2xl bg-white/10 p-4">
                 <legend class="text-cyan-300 px-2 font-title text-lg font-bold">02. Detalhes da viagem</legend>
                 <section class="grid gap-6 lg:grid-cols-2 md:grid-cols-2">
@@ -94,10 +90,40 @@
                             <option value="Zenith 8000"></option>
                             <option value="Open Space"></option>
                         </datalist>
-                    </div>
+                    </div> 
                 </section>
+                    <div>
+                        <p class="class="text-sm ml-2 mt-4 mb-2 text-slate-300 > Classe da Viagem</P>
+                        <section class="grid lg:grid-cols-3 gap-6">
+                            <label class="flex items-center border border-white/10 gap-3 rounded-lg bg-slate-950/40 p-4 hover:bg-white/10">
+                                <input type="radio" name="classeViagem" id="classeViagem" value="economia"><span>Economica</span>
+                            </label>
+                            <label class="flex items-center border border-white/10 gap-3 rounded-lg bg-slate-950/40 p-4 hover:bg-white/10">
+                                <input type="radio" name="classeViagem" id="classeViagem" value="executiva"><span>Executiva</span>
+                            </label>
+                            <label class="flex items-center border border-white/10 gap-3 rounded-lg bg-slate-950/40 p-4 hover:bg-white/10">
+                                <input type="radio" name="classeViagem" id="classeViagem" value="luxo" class="size-4 accent-amber-400" checked><span>Luxo</span>
+                            </label>
+                        </section>
+                    </div>
+                    <div>
+                        <p class="class=" text-sm ml-2 mt-4 mb-2 text-slate-300>Serviços adicionais</P>
+                        <section class="grid lg:grid-cols-2 gap-6">
+                            <label class="flex items-center border border-white/10 gap-3 rounded-lg bg-slate-950/40 p-4 hover:bg-white/10">
+                                <input type="checkbox" name="servicos" id="servico1" value="hotel"><span>Hotel Espacial</span>
+                            </label>
+                            <label class="flex items-center border border-white/10 gap-3 rounded-lg bg-slate-950/40 p-4 hover:bg-white/10">
+                                <input type="checkbox" name="servicos" id="servico2" value="Passeio"><span>Passeio lunar</span>
+                            </label>
+                            <label class="flex items-center border border-white/10 gap-3 rounded-lg bg-slate-950/40 p-4 hover:bg-white/10">
+                                <input type="checkbox" name="servicos" id="servico3" value="Guia"><span>Guia Espacial</span>
+                            </label>
+                            <label class="flex items-center border border-white/10 gap-3 rounded-lg bg-slate-950/40 p-4 hover:bg-white/10">
+                                <input type="checkbox" name="servicos" id="servico4" value="Seguro"><span>Seguro Interplanetário</span>
+                            </label>
+                        </section>     
+                    </div>
             </fieldset>
-
         </form>
     </main>
 </body>
